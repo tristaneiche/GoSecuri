@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/drawable/backgroundgradient.xml" value="0.1" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/drawable/button_style.xml" value="0.1125" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/layout/activity_main_adaptater.xml" value="0.16576086956521738" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/layout/activity_main_view.xml" value="0.1" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/layout/activity_staff.xml" value="0.16" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/layout/activity_user_row_layout.xml" value="0.25" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/layout/cell_staff.xml" value="0.1" />
+        <entry key="..\:/Users/TRIST/AndroidStudioProjects/GoSecuri/app/src/main/res/layout/layout_header.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

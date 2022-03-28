@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GoSecuri</string>
     <string name="equipement">Mon Equipement :</string>
-    <string name="employer">Employer :</string>
+    <string name="employer">Employés :</string>
 </resources>
 
     <!--

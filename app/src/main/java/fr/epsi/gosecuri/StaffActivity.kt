@@ -46,17 +46,12 @@ class StaffActivity : BaseActivity() {
 
 
         Thread {
-            val urls = ArrayList<String>() //to read each line
-            //TextView t; //to show the result, please declare and find it inside onCreate()
+            val urls = ArrayList<String>()
             try {
-                // Create a URL for the desired page
-                val url = URL(urlsup) //My text file location
-                //First open the connection
+                val url = URL(urlsup)
                 val conn: HttpURLConnection = url.openConnection() as HttpURLConnection
-                conn.setConnectTimeout(60000) // timing out in a minute
+                conn.setConnectTimeout(60000)
                 val `in` = BufferedReader(InputStreamReader(conn.getInputStream()))
-
-                //t=(TextView)findViewById(R.id.TextView1); // ideally do this in onCreate()
                 var str: String
                 while (`in`.readLine().also { str = it } != null) {
                     urls.add(str)
@@ -65,8 +60,6 @@ class StaffActivity : BaseActivity() {
             } catch (e: Exception) {
                 Log.d("MyTag", e.toString())
             }
-
-            //since we are in background thread, to post results we have to go back to ui thread. do the following for that
 
             this.runOnUiThread(Runnable {
 
@@ -113,8 +106,6 @@ class StaffActivity : BaseActivity() {
                     textViewequipement6.isVisible = false
                 }
 
-
-                // My TextFile has 3 lines
             })
         }.start()
 

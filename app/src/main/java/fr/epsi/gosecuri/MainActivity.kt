@@ -27,17 +27,13 @@ class MainActivity: AppCompatActivity() {
         val button7 = findViewById<TextView>(R.id.ButtonStaff7)
 
         Thread {
-            val urls = ArrayList<String>() //to read each line
-            //TextView t; //to show the result, please declare and find it inside onCreate()
+            val urls = ArrayList<String>()
             try {
-                // Create a URL for the desired page
-                val url = URL("https://raw.githubusercontent.com/GO-Securi/save_GOSecuri/main/staff.txt") //My text file location
-                //First open the connection
+                val url = URL("https://raw.githubusercontent.com/GO-Securi/save_GOSecuri/main/staff.txt")
                 val conn: HttpURLConnection = url.openConnection() as HttpURLConnection
                 conn.setConnectTimeout(60000) // timing out in a minute
                 val `in` = BufferedReader(InputStreamReader(conn.getInputStream()))
 
-                //t=(TextView)findViewById(R.id.TextView1); // ideally do this in onCreate()
                 var str: String
                 while (`in`.readLine().also { str = it } != null) {
                     urls.add(str)
@@ -46,8 +42,6 @@ class MainActivity: AppCompatActivity() {
             } catch (e: Exception) {
                 Log.d("MyTag", e.toString())
             }
-
-            //since we are in background thread, to post results we have to go back to ui thread. do the following for that
 
             this.runOnUiThread(Runnable {
 
@@ -67,9 +61,6 @@ class MainActivity: AppCompatActivity() {
                 Log.d("response", urls.get(5))
                 Log.d("response", urls.get(6))
                 Log.d("response", urls.get(7))
-
-
-            // My TextFile has 3 lines
             })
         }.start()
 
